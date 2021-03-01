@@ -55,9 +55,9 @@ INSTALLAPT=true
 GERROR=false
 
 # nginx webserver settings
-WEBPORT=80
+WEBPORT=13704
 SSLPORT=443
-SSLINSTALL=true
+SSLINSTALL=false
 WEBINSTALL=true
 LETSENC=false
 DNSNAME=false

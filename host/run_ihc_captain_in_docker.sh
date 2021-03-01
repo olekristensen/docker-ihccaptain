@@ -9,6 +9,9 @@ SERVICE1=php7.3-fpm
 SERVICE2=nginx
 SLEEP=2
 
+# start the monitor...
+su -l www-data -s /opt/ihccaptain/monitor/start.sh
+
 function startService() {
   service $1 start
   status=$?

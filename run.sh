@@ -17,4 +17,4 @@ echo "Running: $IMAGE"
 # /etc/timezone:ro is a file in the docker but a directory locally on my system
 
 set -ex
-docker run -d --name $DOCKER_NAME -p $HOST_PORT:80 -p $HOST_SSLPORT:443 -v $CURRENT_DIR/data:/opt/ihccaptain/data/ -v $CURRENT_DIR/host:/host/ -v "/etc/localtime:/etc/localtime:ro" $IMAGE
+docker run -d --name $DOCKER_NAME --network host -v $CURRENT_DIR/data:/opt/ihccaptain/data/ -v $CURRENT_DIR/host:/host/ -v "/etc/localtime:/etc/localtime:ro" $IMAGE

@@ -1,6 +1,6 @@
 #!/bin/bash
 # docker hub username
-USERNAME=arberg
+USERNAME=olekristensen
 # image name
 IMAGE=ihccaptain
 # http://jemi.dk/ihc/#changelog
